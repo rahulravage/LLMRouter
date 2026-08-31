@@ -1,0 +1,8 @@
+{
+  "name": "NASH",
+  "description": "NASH is an enterprise AI Studio prompt engineering playground with sample runs, multi-model switcher, test matrix, and unified LLM API gateway.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
+

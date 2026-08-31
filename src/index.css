@@ -1,0 +1,183 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #0A0A0B;
+    color: #E2E8F0;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  ::selection {
+    background-color: rgba(37, 99, 235, 0.35);
+    color: #FFFFFF;
+  }
+
+  /* Custom subtle dark scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0A0A0B;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1F2228;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2A2D35;
+  }
+}
+
+input[type="range"] {
+  accent-color: #2563EB;
+}
+
+/* ==========================================================================
+   LIGHT MODE OVERRIDES FOR NASH
+   ========================================================================== */
+.light body {
+  background-color: #F8FAFC !important;
+  color: #0F172A !important;
+}
+
+.light ::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+
+.light ::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+.light ::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Light Backgrounds */
+.light .bg-\[\#0A0A0B\],
+.light .bg-\[\#0a0a0b\] {
+  background-color: #F8FAFC !important;
+}
+
+.light .bg-\[\#0D0F13\],
+.light .bg-\[\#0d0f13\] {
+  background-color: #FFFFFF !important;
+}
+
+.light .bg-\[\#121418\],
+.light .bg-\[\#121418\]\/60 {
+  background-color: #F8FAFC !important;
+}
+
+.light .bg-\[\#16181D\],
+.light .bg-\[\#16181d\] {
+  background-color: #F1F5F9 !important;
+}
+
+.light .bg-\[\#1F2228\],
+.light .bg-\[\#1f2228\] {
+  background-color: #E2E8F0 !important;
+}
+
+.light .hover\:bg-\[\#1F2228\]:hover,
+.light .hover\:bg-\[\#1f2228\]:hover {
+  background-color: #E2E8F0 !important;
+}
+
+.light .hover\:bg-\[\#2A2D35\]:hover,
+.light .hover\:bg-\[\#2a2d35\]:hover {
+  background-color: #CBD5E1 !important;
+}
+
+.light .hover\:bg-\[\#16181D\]:hover,
+.light .hover\:bg-\[\#16181d\]:hover {
+  background-color: #F1F5F9 !important;
+}
+
+.light .bg-\[\#2A2D35\],
+.light .bg-\[\#2a2d35\] {
+  background-color: #E2E8F0 !important;
+}
+
+/* Light Borders */
+.light .border-\[\#1F2228\],
+.light .border-\[\#1f2228\] {
+  border-color: #E2E8F0 !important;
+}
+
+.light .border-\[\#2A2D35\],
+.light .border-\[\#2a2d35\] {
+  border-color: #CBD5E1 !important;
+}
+
+.light .border-\[\#3E424D\],
+.light .border-\[\#3e424d\] {
+  border-color: #94A3B8 !important;
+}
+
+.light .divide-\[\#1F2228\] > :not([hidden]) ~ :not([hidden]),
+.light .divide-\[\#1f2228\] > :not([hidden]) ~ :not([hidden]) {
+  border-color: #E2E8F0 !important;
+}
+
+/* Light Text */
+.light .text-white {
+  color: #0F172A !important;
+}
+
+.light .text-slate-200 {
+  color: #1E293B !important;
+}
+
+.light .text-slate-300 {
+  color: #334155 !important;
+}
+
+.light .text-slate-400 {
+  color: #64748B !important;
+}
+
+.light .text-slate-500 {
+  color: #94A3B8 !important;
+}
+
+.light .hover\:text-white:hover {
+  color: #0F172A !important;
+}
+
+.light .hover\:text-slate-200:hover {
+  color: #1E293B !important;
+}
+
+.light input,
+.light textarea,
+.light select {
+  color: #0F172A !important;
+}
+
+.light input::placeholder,
+.light textarea::placeholder {
+  color: #94A3B8 !important;
+}
+
+/* Code and Terminal Blocks maintain readable contrast */
+.light pre,
+.light code.font-mono {
+  color: #0F172A;
+}
+
+.light .bg-black\/75,
+.light .bg-black\/80 {
+  background-color: rgba(15, 23, 42, 0.6) !important;
+}
+
